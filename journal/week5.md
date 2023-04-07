@@ -34,6 +34,7 @@ Alongside these bash scripts, sql files were created to get uuid from the cognit
 A python file was also made to define functions to create, list, and set messages/message groups using the boto3 SDK for DynamoDB. 
 
 We used a lambda handler function to act as a DynamoDB trigger for DynamoDB streams, and could successfully view messages posted in Cruddur in our DynamoDB table.
+
 ![ddbmessagerecords](https://user-images.githubusercontent.com/125153369/230673782-603779a4-681a-44c3-be35-f7b699d767ec.PNG)
 
 #### Default message convo
