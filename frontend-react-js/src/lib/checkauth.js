@@ -1,3 +1,5 @@
+import { Auth } from 'aws-amplify';
+
 const checkAuth = async (setUser) => {
     Auth.currentAuthenticatedUser({
       // Optional, By default is false. 

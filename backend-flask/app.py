@@ -112,27 +112,27 @@ cors = CORS(
 #   return response
 
 #Initialize ROLLBAR
-rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-@app.before_first_request
-def init_rollbar():
-    """init rollbar module"""
-    rollbar.init(
+#rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+#@app.before_first_request
+#def init_rollbar():
+    #"""init rollbar module"""
+    #rollbar.init(
         # access token
-        rollbar_access_token,
+        #rollbar_access_token,
         # environment name
-        'production',
+        #'production',
         # server root directory, makes tracebacks prettier
-        root=os.path.dirname(os.path.realpath(__file__)),
+        #root=os.path.dirname(os.path.realpath(__file__)),
         # flask already sets up logging
-        allow_logging_basic_config=False)
+        #allow_logging_basic_config=False)
 
     # send exceptions from `app` to rollbar, using flask's signal system.
-    got_request_exception.connect(rollbar.contrib.flask.report_exception, app) 
+    #got_request_exception.connect(rollbar.contrib.flask.report_exception, app) 
 
-@app.route('/rollbar/test')
-def rollbar_test():
-    rollbar.report_message('Hello World!', 'warning')
-    return "Hello World!"
+#@app.route('/rollbar/test')
+#def rollbar_test():
+    #rollbar.report_message('Hello World!', 'warning')
+    #return "Hello World!"
 
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
@@ -182,14 +182,14 @@ def data_messages(message_group_uuid):
 @app.route("/api/messages", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_create_message():
-  message = request.json['message']
   message_group_uuid   = request.json.get('message_group_uuid',None)
   user_receiver_handle = request.json.get('handle',None)
+  message = request.json['message']
   access_token = extract_access_token(request.headers)
   try:
     claims = cognito_jwt_token.verify(access_token)
     # authenicatied request
-    app.logger.debug("authenicated")
+    app.logger.debug("authenticated")
     app.logger.debug(claims)
     cognito_user_id = claims['sub']
     if message_group_uuid == None:
@@ -235,6 +235,7 @@ def data_home():
     app.logger.debug(e)
     app.logger.debug("unauthenticated")
     data = HomeActivities.run()
+    print(data)
   #app.logger.debug('claims')
   #app.logger.debug(claims)
   
