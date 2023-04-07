@@ -1,8 +1,9 @@
 # Week 5 — DynamoDB and Serverless Caching
 
-### Objectives
+## Objectives
 
-## Main Tools
+## #Main Tools
+
 <ol>
   <li>boto3 SDK</li>
   <li>DynamoDB</li>
@@ -15,16 +16,18 @@ The main objectives this week were to use DynamoDB to implement message groups, 
 
 In order to do this, we started off by creating the following bash scripts to handle our DynamoDB data.
 
-'''
+```
 ./bin/ddb/schema-load
 ./bin/ddb/seed
 ./bin/ddb/scan
 ./bin/ddb/patterns/list-conversation
 ./bin/ddb/patterns/get-conversation
 
-'''
+```
 ![ddbprod](https://user-images.githubusercontent.com/125153369/230673932-06c3b280-75a7-4034-9c5a-eb712dca14b6.PNG)
+
 ![ddbscan](https://user-images.githubusercontent.com/125153369/230673909-5fec5ae3-816b-466f-b9e5-13e254ee9300.PNG)
+
 ![ddbconversation](https://user-images.githubusercontent.com/125153369/230673885-19c7087f-c08c-42c1-a010-a03dafd89d61.PNG)
 
 Alongside these bash scripts, sql files were created to get uuid from the cognito user id, and define the difference between the sender and reciever.
@@ -49,10 +52,10 @@ Some of the challenges faced for this part of the bootcamp were among the follow
 3. undefined/misspelled variables, function names
 4. /@ causing issues
 
-1.CORS errors can be tricky, as it can seem difficult to pinpoint what exactly is causing the error, but with enough sleuthing, troubleshooting, trial and error, a solution was found.
+1. CORS errors can be tricky, as it can seem difficult to pinpoint what exactly is causing the error, but with enough sleuthing, troubleshooting, trial and error, a solution was found.
 2. This fix was found by a fellow bootcamper, who found out uuid values for users in development and prod needed to match to fix the NoneType error 
 3. This may seem trivial, but with a lot of files to comb over, as well as variables, classes, etc. it can be easy to miss and was something I had come across. 
-3 and 4. Ctr+Shift+F is definitely a friend for spotting unwanted characters (in this case, the @ that came before messages , messages/.handle) in the codebase!!! 
+4. Ctr+Shift+F is definitely a friend for spotting unwanted characters (in this case, the @ that came before messages , messages/.handle) in the codebase!!! 
 
 ### Conclusion
 
