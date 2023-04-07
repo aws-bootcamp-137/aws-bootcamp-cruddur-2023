@@ -48,7 +48,7 @@ We used a lambda handler function to act as a DynamoDB trigger for DynamoDB stre
 Some of the challenges faced for this part of the bootcamp were among the following:
 
 1. CORS errors:
-  *  CORS errors can be tricky, as it can seem difficult to pinpoint what exactly is causing the error, but with enough sleuthing, troubleshooting, trial and error, a     solution was found.
+  **  CORS errors can be tricky, as it can seem difficult to pinpoint what exactly is causing the error, but with enough sleuthing, troubleshooting, trial and error, a     solution was found.
 2. NoneType errors relating to uuid:
   * This fix was found by a fellow bootcamper, who found out uuid values for users in development and prod needed to match to fix the NoneType error 
 3. undefined/misspelled variables, function names
