@@ -23,6 +23,7 @@ Tasks completed for this week/s were:
 ![createecscluster](https://user-images.githubusercontent.com/125153369/235267865-0281d6a0-5f4a-4c2e-a16e-45691e858e2a.PNG)
 
 - Create and store secrets in Parameter Store
+
 ![secrets](https://user-images.githubusercontent.com/125153369/235268274-ef78f28c-2b40-415b-baa0-f82480b1d004.PNG)
 
 
@@ -33,8 +34,8 @@ Tasks completed for this week/s were:
 ![createrole](https://user-images.githubusercontent.com/125153369/235267888-78a48841-bac5-4410-9eb1-7e714df2114b.PNG)
 
 - Create Task Definition file for backend, frontend
-
-![frontendtaskdef](https://user-images.githubusercontent.com/125153369/235267923-f40c5fb4-ebe8-4c3c-b1a0-aebb3251b6b7.PNG)
+ 
+![frontendtaskdef](https://user-images.githubusercontent.com/125153369/235271377-fa45cf74-7f11-4857-a8f8-bfd86374618c.PNG)
 
 - Setup Sessions Manager CLI
 
@@ -42,11 +43,13 @@ Tasks completed for this week/s were:
 
 - Create Application Load Balancer
 
-![applicationloadbalancer](https://user-images.githubusercontent.com/125153369/235267751-87221fa7-d062-4d70-a564-5af78dc1f3d0.PNG)
+![applicationloadbalancer](https://user-images.githubusercontent.com/125153369/235271273-5b4d97f4-cb78-4268-a39c-9dc9ef20fa53.PNG)
+
 
 - Creating a hosted zone in Route 53; add nameservers to custom dns
 
-![hostedzone](https://user-images.githubusercontent.com/125153369/235269361-28e2cd10-6caa-48a0-9b5d-d02cc614b844.PNG)
+![hostedzone](https://user-images.githubusercontent.com/125153369/235271326-46f98e3b-aa2b-4c49-bbe4-75f196f10ee4.PNG)
+
 
 
 Challenges Faced:
