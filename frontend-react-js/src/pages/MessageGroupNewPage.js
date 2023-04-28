@@ -6,10 +6,11 @@ import DesktopNavigation  from '../components/DesktopNavigation';
 import MessageGroupFeed from '../components/MessageGroupFeed';
 import MessagesFeed from '../components/MessageFeed';
 import MessagesForm from '../components/MessageForm';
+import {checkAuth, getAccessToken} from '../lib/checkAuth';
 
 // [TODO] Authenication
 //import Cookies from 'js-cookie'//
-import checkAuth from '../lib/checkauth'
+
 
 export default function MessageGroupPage() {
   const [otherUser, setOtherUser] = React.useState([]);

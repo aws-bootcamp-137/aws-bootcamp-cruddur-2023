@@ -3,6 +3,7 @@ import React from "react";
 import process from 'process';
 import { json, useParams } from 'react-router-dom';
 import { parseAWSExports } from '@aws-amplify/core';
+import {getAccessToken} from '../lib/checkAuth';
 
 
 export default function ActivityForm(props) {
@@ -29,11 +30,13 @@ export default function ActivityForm(props) {
         json.message_group_uuid = params.message_group_uuid
       }
 
+      await getAccessToken()
+      const access_token = localStorage.getItem("access_token")
       const res = await fetch(backend_url, {
         method: "POST",
         headers: {
           // send JWT with request header------
-          'Authorization': `Bearer ${localStorage.getItem("access_token")}`,
+          'Authorization': `Bearer ${access_token}`,
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
