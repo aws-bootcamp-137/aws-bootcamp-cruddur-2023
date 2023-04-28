@@ -16,7 +16,9 @@ Tasks completed for this week/s were:
 
   - Python (Base image)
   - Flask
-  - React
+  - React 
+
+![ecr](https://user-images.githubusercontent.com/125153369/235269608-e484e6d0-649e-4469-abc3-991c11221ffd.PNG)
 
 ![createecscluster](https://user-images.githubusercontent.com/125153369/235267865-0281d6a0-5f4a-4c2e-a16e-45691e858e2a.PNG)
 
