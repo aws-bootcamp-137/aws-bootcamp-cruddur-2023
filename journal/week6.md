@@ -20,18 +20,18 @@ Tasks completed for this week/s were:
 
 ![ecr](https://user-images.githubusercontent.com/125153369/235269608-e484e6d0-649e-4469-abc3-991c11221ffd.PNG)
 
-![createecscluster](https://user-images.githubusercontent.com/125153369/235267865-0281d6a0-5f4a-4c2e-a16e-45691e858e2a.PNG)
+![createecscluster](https://user-images.githubusercontent.com/125153369/235271497-5f82d310-1eb0-451a-9d74-ff004cbdc054.PNG)
+
 
 - Create and store secrets in Parameter Store
 
 ![secrets](https://user-images.githubusercontent.com/125153369/235268274-ef78f28c-2b40-415b-baa0-f82480b1d004.PNG)
 
-
 - Create IAM Roles (Task, Execution) for xray, cloudwatch, etc.)
 
-![createrole2](https://user-images.githubusercontent.com/125153369/235267880-f48da6dd-d721-40b1-9fa2-5289557af2b4.PNG)
+![createrole](https://user-images.githubusercontent.com/125153369/235271540-3eb93bd3-3925-4873-b968-7d502ba88d71.PNG)
 
-![createrole](https://user-images.githubusercontent.com/125153369/235267888-78a48841-bac5-4410-9eb1-7e714df2114b.PNG)
+![createrole2](https://user-images.githubusercontent.com/125153369/235271577-72627ef0-1f4b-423c-a9f4-9d803dbd05bb.PNG)
 
 - Create Task Definition file for backend, frontend
  
