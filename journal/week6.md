@@ -10,7 +10,7 @@ Tasks completed for this week/s were:
 
 - CloudWatch logging group for Fargate/ECS Cluster
 
-![logroup](https://user-images.githubusercontent.com/125153369/235269137-fee59f1c-b172-4086-9c0a-6c4b251d6f91.PNG)
+![logroup](https://user-images.githubusercontent.com/125153369/235271692-a04b77d5-3203-400c-a833-0fb1b550da22.PNG)
 
 - Create ECR repo and ECS cluster for:
 
